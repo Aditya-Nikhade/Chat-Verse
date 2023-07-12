@@ -1,0 +1,52 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    background-color: #1d1d1f;
+    color: white;
+}
+.logout_button{
+    padding: 7px;
+    margin-left: 8px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background-color: white;
+}
+.left_section{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    flex: 30%;
+}
+.avatar_header{
+    margin-left: auto;
+    margin-right: 30px;
+}
+.avatar_header_2{
+    margin-left: auto;
+    margin-right: 20px;
+}
+.middle_section{
+    flex: 40%;
+    background-color: #474950;
+    text-align: center;
+    display: flex;
+    color: rgb(164, 164, 164);
+    border-radius: 6px;
+}
+.right_section{
+    flex: 30%;
+    display: flex;
+    align-items: flex-end ;
+}
+.middle_section input[type="text"]{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    min-width: 35vw;
+    color: white;
+    font-size: 14px;
+}

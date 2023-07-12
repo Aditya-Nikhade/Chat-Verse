@@ -1,0 +1,70 @@
+body {
+    background-color: #f9f9f9;
+  }
+  
+  .chat {
+    flex: 0.75;
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-bottom: 145px;
+  }
+  
+  .header_chat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px;
+    border-bottom: 0.8px solid rgb(162, 162, 162);
+  }
+
+  .outlined_star{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: gold;
+    background-clip: text;
+  }
+
+  
+  .left_header_chat .MuiSvgIcon-root {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  
+  .right_header_chat .MuiSvgIcon-root {
+    margin-right: 5px;
+  }
+  
+  .channel_name {
+    text-transform: lowercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 800px){
+    .chat.hidechat{
+      flex: 1;
+      display: block;
+  } 
+    .chat{
+      flex: 0.75;
+    }
+  }
+  @media (min-width: 660px) and (max-width: 800px){
+    .chat.hidechat{
+      flex: 1;
+      display: block;
+  }
+    .chat{
+      flex: 0.72;
+    }
+  }
+  @media (max-width: 570px){
+    .chat.hidechat{
+        width: 100%;
+        display: block;
+    }
+    .chat{
+        display: none;
+    }
+  }
