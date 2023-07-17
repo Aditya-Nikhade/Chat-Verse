@@ -35,7 +35,7 @@ export default function Sidebar({ toggle, toggleHamburger }) {
 
     const submitChannel = (e) => {
         e.preventDefault();
-        if (newChannel !== "") {
+        if (newChannel.trim() !== "") {
             addDoc(collection(db, "space"), {
                 name: newChannel
             })
