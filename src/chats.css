@@ -17,14 +17,6 @@ body {
     border-bottom: 0.8px solid rgb(162, 162, 162);
   }
 
-  .outlined_star{
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: gold;
-    background-clip: text;
-  }
-
-  
   .left_header_chat .MuiSvgIcon-root {
     margin-left: 10px;
     font-size: 18px;
