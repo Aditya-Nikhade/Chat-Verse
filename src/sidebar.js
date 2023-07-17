@@ -18,6 +18,19 @@ export default function Sidebar({ toggle, toggleHamburger }) {
         setDropDown((dropdown) => (!dropdown));
     }
 
+    useEffect(() => {
+        onSnapshot(collection(db, "space"), (snapshot) => {
+            setChannels(
+                snapshot.docs.map((dox) => {
+                    return {
+                        id: dox.id,
+                        name: dox.data().name
+                    }
+                })
+            );
+        });
+    }, [])
+
     const [{ user }, dispatch] = useStateValue()
 
     const submitChannel = (e) => {
